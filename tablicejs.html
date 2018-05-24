@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>TABLICE kursjs.pl</head>
+<title>Tablice kursjs.pl<br></title>
+     <hr>
+    <body>
+        <script>
+        /*//Zadanie 1 Zadeklaruj tablicę tab z 5 tekstami. Wypisz w konsoli jej długość. 
+        var tab = ["zerowy", "pierwszy", "drugi", "trzeci", "czwarty"];
+        
+        /*zad 2
+        var i;
+        for (i=0; i<tab.length; i++){
+            document.write(tab[i].length);
+        } 
+        zad 3
+        tab.push("nowy");
+        console.log(tab.length);
+        document.write(tab); */
+        
+        /*Zadanie 4 Stwórz tablicę 10 losowych absolutnych liczb z przedziału 1-10. Wykorzystaj do tego odpowiedni wzór z tej strony. Po utworzeniu tablicy wypisz w konsoli jej największy i najmniejszy element. Uwaga! Nie stosuj do tego pętli for jak w przykładach powyżej, a metodę sort()  */
+        
+      /*  var tab = [];
+        for (var i=0; i <10; i++) {
+            tab.push(Math.floor(Math.random()*10)+1 );
+        } tab.sort(function(a,b) {
+        return a-b;
+        });
+        console.log(tab); */
+
+        /*Zadanie 5 Z podanej tablicy wypisz pełnoletnich*/
+
+        const tabUsers = [
+        {name : "Marcin", age: 14},
+        {name : "Piotr", age: 18},
+        {name : "Agnieszka", age: 13},
+        {name : "Weronika", age: 20}
+        ]
+
+        tabUsers.filter(function(x) {
+        if (x.age >= 18){
+            console.log(x.name);
+        } else {
+            return false;
+        }
+        }); 
+
+    
+
+
+        
+        
+    
+
+        </script>
+
+
+
+
+    </body>
+
+
+
+</html>

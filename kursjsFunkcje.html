@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+<head></head>
+    <body>
+        <p> DOM</p>
+        <hr><br>
+        <button type="button" id="btn">Kliknij mnie1234566</button>
+        <br><br>
+        
+        <script>
+        /*/*
+        function sum(a, b) {
+            console.log(a + b);
+        }
+
+        sum(2, 3); //5
+
+        function writeText(name) {
+            console.log(name + " ma kota");
+        }
+        writeText("Ala"); //Ala ma kota
+        writeText("Marysia"); //Marysia ma kota
+        
+        
+        function randomBetween(min, max) {
+            console.log(  Math.floor(Math.random() * (max-min+1) + min)  );
+    }
+        randomBetween(1, 100);
+        */
+
+        /*
+        function fixName(name) {
+            console.log(name.charAt(0).toUpperCase() + name.substr(1));
+        }
+        fixName("marcin"); //Marcin
+        function writeText(name) {
+            console.log(fixName(name) + " ma kota");
+        }
+        writeText('kasia'); //Kasia ma kota
+        var nr;
+         function losowanie(){
+         const nr = Math.random();
+         return nr;
+        }
+        document.write(losowanie());
+
+        
+        let x = 10;
+        function sum(y) {
+            x = x + y; //nie użyliśmy słowa var/let/const - nie tworzymy nowej zmiennej, a zmieniamy globalną
+            return x;
+        }
+
+        console.log( sum(10) ); //wypisze 20
+        console.log( x ); //wypisze 20
+        */
+
+        //ZADANIA TRENINGOWE http://kursjs.pl/kurs/super-podstawy/funkcje.php
+        //Zad 1
+       /* function wypiszText(param){
+            return "Liczba liter: " + param.length;
+        }
+        console.log(wypiszText("Bartek"));
+
+        //ZADANIE 2 Napisz funkcje, która zsumuje przekazaną do niej tablicę i zwraca wynik (sumę) 
+        var tab = [1,2,3,4];
+        var i;
+        var suma = 0;
+        function sumujTablice(parametr){
+            for (i = 0; i < tab.length; i++) {
+            //Dodanie do sumy i-tego elementu tablicy
+            suma += tab[i];
+            } 
+         return suma;
+        }
+        console.log(sumujTablice(tab));
+
+        //ZADANIE 3   Napisz funkcję, która przyjmie dowolny tekst. Funkcja niech zwraca tekst, który ma zmiksowana wielkość liter np:
+        /*input -> Ala ma kota
+        output -> AlA Ma kOtA */
+        
+      /*  function miks(param){
+            var txtBase = '';
+            var i;
+            for (i=0; i<param.length; i++){
+                if (i%2===0){
+                    txtBase+=param.charAt(i).toUpperCase();
+                } else {
+                    txtBase+= param.charAt(i).toLowerCase();
+                }
+            } return txtBase;
+        } 
+        console.log(miks("Ala ma Kota")); */
+
+        //ZADANIE 4 
+        /*Napisz funkcje, która będzie wymagać 2 atrybutów.
+        Funkcja niech sprawdza, czy oba atrybuty są numerami.
+        Funkcja ma zwracać iloczyn (*) obu liczb.
+        Jeżeli któryś z atrybutów nie jest liczba, funkcja niech zwraca false.
+        NIE Wywołuj na razie tej funkcji */
+
+       /* function dwaAtr(atr1, atr2){
+            if (Number.isInteger(atr1) && Number.isInteger(atr1)) 
+            { return atr1 * atr2;
+            } else {
+                return false;
+                }
+            }
+            console.log(dwaAtr(2,3));
+            console.log(dwaAtr("w",3)); */
+            
+        //ZADANIE 8
+        var i;
+        var min;
+        function getMinFromTab(tab) {
+            tab.sort(function(a, b){return a - b});
+            document.write(" pierwsza: "+"<br>" + tab);
+            var min = tab[0];        
+            return min;
+        } 
+
+        var tab = [];
+            for ( i=0; i<10; i++){
+                tab.push(Math.floor(Math.random() * 10)+1);
+            }
+            console.log( getMinFromTab(tab));
+
+            
+        </script>
+    
+        </body>
+    
+    
+</html>

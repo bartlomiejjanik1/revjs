@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head></head>
+    <body>
+        <p> DOM</p>
+        <hr><br>
+        <button type="button" id="btn">Kliknij mnie1234566</button>
+        <br><br>
+        
+        <script>
+        var z;
+        var donuts = ["jelly donut", "chocolate donut", "glazed donut"];
+
+        function printDonuts(donut) {
+        donut += " hole";
+        donut = donut.toUpperCase();
+        document.write(donut);
+        };
+        donuts.forEach(printDonuts);
+
+
+        for (var i = 0; i < donuts.length; i++) {
+        donuts[i] += " hole";
+        donuts[i] = donuts[i].toUpperCase();
+        document.write(donuts[i]);
+        }
+              
+        </script>
+    
+    </body>
+    
+    
+</html>
